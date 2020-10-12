@@ -93,6 +93,38 @@
   background-color: #3338b2;
 }
 
+table,
+th,
+td {
+  border: 1px solid #333333;
+  border-collapse: collapse;
+}
+
+.table {
+  width: 100%;
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.5rem 0.5rem;
+}
+
+th {
+  font-family: 'Futura PT Book';
+  font-size: 0.75rem;
+  color: #828282;
+}
+
+td {
+  font-family: 'Futura PT Book';
+  font-size: 0.875rem;
+  color: #333333;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -222,12 +254,18 @@ body {
   min-height: calc(100vh - 116px);
   background: #ffffff;
   border-left: 1px solid #f2f2f2;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .sidebar-right.show-menu {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 200px;
           flex: 0 0 200px;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .sidebar-right__menu {
@@ -257,10 +295,24 @@ body {
 
 .f-select {
   height: 48px;
-  border-radius: 50%;
-  background: transparent;
+  border-radius: 24px;
+  background-color: #f9f9f9;
   font-size: 1rem;
-  border: 1px solid blue;
+  padding: 0 1.75rem 0 22px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: #4B4D84;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+}
+
+.f-select:active {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .avatar {
@@ -375,4 +427,9 @@ body {
   font-family: 'Futura PT Book';
   color: #adadad;
   text-decoration: none;
+}
+
+.active-item,
+.svg-link:hover {
+  fill: #4C51CC;
 }

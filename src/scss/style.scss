@@ -3,6 +3,7 @@
 @import "helpers/fonts";
 @import "helpers/helpers-temp";
 @import "components/buttons";
+@import "components/tables";
 
 
 * {
@@ -100,10 +101,12 @@ html, body {
    min-height: calc(100vh - 116px);
    background: #ffffff;
    border-left: 1px solid #f2f2f2;
+   transition: all 0.5s ease 0s;
 }
 
 .sidebar-right.show-menu {
    flex: 0 0 200px;
+   transition: all 0.5s ease 0s;
  
 }
 
@@ -129,10 +132,19 @@ html, body {
 
 .f-select {
    height: 48px;
-   border-radius: 50%;
-   background: transparent;
+   border-radius: 24px;
+   background-color: #f9f9f9;
    font-size: 1rem;
-   border: 1px solid blue;
+   padding: 0 1.75rem 0 22px;
+   appearance: none;
+   color: $title-color;
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+   background-repeat: no-repeat;
+   background-position: right 0.75rem center;
+   background-size: 16px 12px;
+   &:active {
+      appearance: none;
+   }
 }
 
 .avatar {
@@ -216,4 +228,12 @@ html, body {
    color: #adadad;
    text-decoration: none;
 }
+
+.active-item,
+.svg-link:hover {
+   fill: $primary-color;
+}
+
+
+
 

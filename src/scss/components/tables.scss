@@ -1,0 +1,33 @@
+//tables
+
+table,
+th,
+td
+ {
+   border: 1px solid #333333;
+   border-collapse: collapse;
+}
+.table {
+   width: 100%;
+}
+.table > :not(caption) > * > *{
+   padding:0.5rem 0.5rem;
+   //padding: 0;
+}
+
+th {
+   font-family: 'Futura PT Book';
+   font-size: 0.75rem;
+   color: #828282;
+}
+
+td {
+   font-family: 'Futura PT Book';
+   font-size: 0.875rem;
+   color: #333333;
+}
+
+.table-responsive {
+   overflow-x: auto;
+   -webkit-overflow-scrolling: touch;
+}

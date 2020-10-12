@@ -11,4 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
       // alert('Hello!');
    });
+
+   const navLink = document.querySelectorAll('.nav-link');
+   
 });
