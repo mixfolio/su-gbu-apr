@@ -1,0 +1,102 @@
+//Forms
+.f-label {
+   display: block;
+   font-family: 'Futura PT Demi';
+   font-size: 0.75rem;
+   text-transform: uppercase;
+   color: #adadad;
+   margin-bottom: 8px;
+}
+
+.f-label-ico {
+   padding-left: 30px;
+   position: relative;
+   &::before {
+      position: absolute;
+      left: 0;
+      top: -4px;
+   }
+
+   &--01::before {
+      content: url(../img/svg/mailing-icons/mail-from-ico.svg);
+   }
+
+   &--02::before {
+      content: url(../img/svg/mailing-icons/mail-to-ico.svg);
+   }
+
+   &--03::before {
+
+      content: url(../img/svg/mailing-icons/open-envelop-ico.svg);
+   }
+
+   &--04::before {
+      content: url(../img/svg/mailing-icons/envelope-ico.svg);
+   }
+
+   //Page profile
+
+   &--departament::before {
+      content: url(../img/svg/profile-icons/home-ico.svg);
+   }
+
+   &--position::before {
+      content: url(../img/svg/profile-icons/position-ico.svg);
+   }
+
+   &--accessPerm::before {
+      content: url(../img/svg/profile-icons/lock-ico.svg);
+   }
+
+   &--userMail::before {
+      content: url(../img/svg/profile-icons/envelope-ico.svg);
+   }
+
+   &--cityPhone::before {
+      content: url(../img/svg/profile-icons/phone-ico.svg);
+   }
+
+   &--mobPhone::before {
+      content: url(../img/svg/profile-icons/mobile-phone-ico.svg);
+   }
+
+   &--userLogin::before {
+      content: url(../img/svg/profile-icons/user-key-ico.svg);
+   }
+
+   &--userPass::before {
+      content: url(../img/svg/profile-icons/key-ico.svg);
+   }
+
+   &--userPhoto::before {
+      content: url(../img/svg/profile-icons/user-photo-ico.svg);
+   }
+}
+
+
+.f-control {
+
+   height: 48px;
+   border: none;
+   border-radius: 24px;
+   background-color: #f9f9f9;
+   font-size: 1rem;
+   padding: 0 22px;
+}
+
+.f-select {
+   height: 48px;
+   border-radius: 24px;
+   background-color: #f9f9f9;
+   font-size: 1rem;
+   padding: 0 1.75rem 0 22px;
+   appearance: none;
+   color: $title-color;
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+   background-repeat: no-repeat;
+   background-position: right 0.75rem center;
+   background-size: 16px 12px;
+   &:active {
+      appearance: none;
+   }
+}
