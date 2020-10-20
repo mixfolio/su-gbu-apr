@@ -1,4 +1,9 @@
 //Forms
+textarea {
+   resize: none;
+   vertical-align: middle;
+}
+
 .f-label {
    display: block;
    font-family: 'Futura PT Demi';
@@ -17,21 +22,25 @@
       top: -4px;
    }
 
-   &--01::before {
+   &--mailFrom::before {
       content: url(../img/svg/mailing-icons/mail-from-ico.svg);
    }
 
-   &--02::before {
+   &--mailTo::before {
       content: url(../img/svg/mailing-icons/mail-to-ico.svg);
    }
 
-   &--03::before {
+   &--subject::before {
 
       content: url(../img/svg/mailing-icons/open-envelop-ico.svg);
    }
 
-   &--04::before {
+   &--message::before {
       content: url(../img/svg/mailing-icons/envelope-ico.svg);
+   }
+
+   &--attachment::before {
+      content: url(../img/svg/mailing-icons/clip-ico.svg);
    }
 
    //Page profile
@@ -99,4 +108,20 @@
    &:active {
       appearance: none;
    }
+}
+
+.label-attachment {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 80px;
+   background-color: #F9F9FF;
+   border-radius: 16px;
+   color: #9EA0DC;
+}
+
+.temp-holder::placeholder {
+   color: #000000;
 }
