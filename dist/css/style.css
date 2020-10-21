@@ -948,3 +948,14 @@ hr {
   margin-left: 12px;
   margin-right: 12px;
 }
+
+.map {
+  position: relative;
+}
+
+.card-map {
+  position: absolute;
+  width: 344px;
+  top: 48px;
+  left: 24px;
+}
