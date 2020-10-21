@@ -97,25 +97,26 @@ hr {
 
 .sidebar-left {
    position: relative;
-   flex: 0 0 100px;
+   flex: 0 0 220px;
    min-height: calc(100vh - 116px);
    background: #ffffff;
    box-shadow: 4px 0px 24px rgba(0, 0, 0, 0.04);
    z-index: 5;
+   padding: 8px;
 }
 .sidebar-left__menu {
-   width: 48px;
+   //width: 48px;
    margin: 28px auto 0 auto;
 }
 
 
 .nav-link {
    display: flex;
-   flex: 0 0 48px;
    height: 48px;
-   justify-content: center;
    align-items: center;
    margin-bottom: 1.5rem;
+   color: #bdbdbd;
+   text-decoration: none;
    & img {
       display: block;
    }
@@ -124,8 +125,8 @@ hr {
    }
 }
 
-.nav-link object svg {
-   fill: red;
+.nav-link--active {
+   color: #000000;
 }
 
 .sidebar-right {
@@ -320,6 +321,12 @@ hr {
    flex-wrap: wrap;
    margin-left: -12px;
    margin-right: -12px;
+}
+
+.col-3 {
+   width: calc(25% - 24px);
+   margin-left: 12px;
+   margin-right: 12px;
 }
 
 .col-4 {
