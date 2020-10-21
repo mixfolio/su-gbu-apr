@@ -10,6 +10,7 @@
 
 //blocks
 @import "blocks/signin";
+@import "blocks/welcome";
 @import "blocks/header";
 
 
@@ -80,6 +81,7 @@ hr {
 
 
 .main {
+   position: relative;
    width: 100%;
 }
 
@@ -103,7 +105,14 @@ hr {
    box-shadow: 4px 0px 24px rgba(0, 0, 0, 0.04);
    z-index: 5;
    padding: 8px;
+   display: none;
+   transition: All 0.5s ease 0s;
 }
+
+.sidebar-left--show {
+   display: inline-flex;
+}
+
 .sidebar-left__menu {
    //width: 48px;
    margin: 28px auto 0 auto;

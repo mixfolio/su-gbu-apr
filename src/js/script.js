@@ -1,5 +1,7 @@
 'use strict';
 window.addEventListener('DOMContentLoaded', () => {
+
+   @@include("burger.js")
    @@include("tabs.js")
 
    @@include("spend.js")

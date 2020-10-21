@@ -6,8 +6,10 @@
    background-color: transparent;
    font-family: 'Futura PT';
    font-size: 1rem;
+   text-decoration: none;
    padding: 0 3rem;
    height: 48px;
+   line-height: 48px;
    cursor: pointer;
    transition: all 0.2s;
    &:hover {
@@ -49,5 +51,24 @@
    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);
    & img {
       display: block;
+   }
+}
+
+.btn-burger {
+   position: absolute;
+   top: 24px;
+   left: 24px;
+   display: inline-flex;
+   width: 48px;
+   height: 48px;
+   border-radius: 8px;
+   background-color: #ffffff;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.05);
+   transition: All 0.3s ease 0s;
+   cursor: pointer;
+   &:hover {
+      box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
    }
 }
