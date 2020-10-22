@@ -152,9 +152,14 @@ hr {
 .sidebar-right.show-menu {
    // flex: 0 0 200px;
    transition: all 0.5s ease 0s;
-   flex: 0 0 200px;
+   flex: 0 0 64px;
+   // flex: 0 0 200px;
    padding: 32px 24px;
  
+}
+
+.show-menu .sbar--show {
+   display: none;
 }
 
 // .sidebar-right__menu {
