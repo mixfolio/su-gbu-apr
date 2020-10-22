@@ -80,6 +80,37 @@ textarea {
    &--userPhoto::before {
       content: url(../img/svg/profile-icons/user-photo-ico.svg);
    }
+
+   //Page exit-log
+
+   &--user::before {
+      content: url(../img/svg/form-label-icons/user-ico.svg);
+   }
+
+   &--building::before {
+      content: url(../img/svg/form-label-icons/building-ico.svg);
+   }
+
+   &--time::before {
+      content: url(../img/svg/form-label-icons/calendar-ico.svg);
+   }
+
+   &--goal::before {
+      content: url(../img/svg/form-label-icons/goal-ico.svg);
+   }
+
+   &--address::before {
+      content: url(../img/svg/form-label-icons/address-ico.svg);
+   }
+
+   &--desc::before {
+      content: url(../img/svg/form-label-icons/writing-ico.svg);
+   }
+
+
+
+
+
 }
 
 
