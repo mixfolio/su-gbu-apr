@@ -1,43 +1,6 @@
 // Tabs
+
 .tabs-list {
-   display: flex;
-   
-   margin: 0 -12px;
-   margin-bottom: 2.5rem;
-}
-
-.tab-item {
-   margin: 0 12px;
-   width: 100%;
-   
-   
-}
-.tab {
-   padding: 16px;
-   font-family: 'Futura PT Demi';
-   font-size: 1.125rem;
-   text-decoration: none;
-   color: #BFBFBF;
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: #fff;
-   height: 64px;
-   border-radius: 16px;
-   box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.05);
-   transition: all 0.3s ease 0s;
-   &:hover {
-      color: $title-color;
-      box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
-   }
-   &-active {
-      color: $title-color;
-      box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
-   }
-}
-
-.tabs-list-2 {
    display: flex;
    flex-wrap: wrap;
    margin-right: -12px;
@@ -45,12 +8,12 @@
    margin-bottom: 1.5rem;
 }
 
-.tab-item-2 {
+.tab-item {
    margin: 0 12px;
    margin-bottom: 24px;
 }
 
-.tab-2 {
+.tab {
    padding: 16px 24px;
    font-family: 'Futura PT Demi';
    font-size: 1.125rem;
@@ -64,31 +27,51 @@
    border-radius: 16px;
    box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.05);
    transition: all 0.3s ease 0s;
+
    &::before {
       content: '';
       width: 24px;
       height: 24px;
       margin-right: 8px;
       background: no-repeat center / 100%;
+      transition: all 0.3s ease 0s;
    }
+
+   &--active {
+      color: $title-color;
+      box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
+   }
+
    &--reg::before {
       background-image: url(../img/tab-icons/book-pen-ico-dsbl.png);
+   }
+   
+   &--reg.tab--active::before,
+   &--reg:hover::before {
+      background-image: url(../img/tab-icons/book-pen-ico.png);
    }
 
    &--trip::before {
       background-image: url(../img/tab-icons/resume-ico-dsbl.png);
    }
 
+   &--trip.tab--active::before,
+   &--trip:hover::before {
+      background-image: url(../img/tab-icons/resume-ico.png);
+   }
+
    &--report::before {
       background-image: url(../img/tab-icons/list-ico-dsbl.png);
+   }
+
+   &--report.tab--active::before,
+   &--report:hover::before {
+      background-image: url(../img/tab-icons/list-ico.png);
    }
 
    &:hover {
       color: $title-color;
       box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
    }
-   &-active {
-      color: $title-color;
-      box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
-   }
+   
 }
