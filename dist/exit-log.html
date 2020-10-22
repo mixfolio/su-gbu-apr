@@ -13,7 +13,7 @@
 <body>
 
    <div class="header">
-   <a class="nav-brand" href="#"><img src="img/svg/apr-logo-07-2.svg" height="36" alt="АПР-лого"></a>
+   <a class="nav-brand" href="home.html"><img src="img/svg/apr-logo-07-2.svg" height="36" alt="АПР-лого"></a>
    <h5 class="header__title">Система управления ГБУ АПР</h5>
    <div class="header__group-btn">
       <form>
@@ -153,243 +153,129 @@
                   <a class="tab" href="#">План поездки сотрудников</a>
                </li>
                <li class="tab-item">
-                  <a class="tab" href="#">Закупки</a>
+                  <a class="tab" href="#">Отчет по выездам</a>
                </li>
-               <!-- <li class="tab-item">
-                  <a class="tab" href="#">Прочее</a>
-               </li> -->
+               <li class="tab-item">
+                  <a class="tab" href="#">Отчет по рабочему времени</a>
+               </li>
             </ul>
+
+            <!-- TAB Content 1 -->
             <div class="tab-content">
-               
-               
                <div class="row">
 
-                  <div class="col-3 mb-3">
-                     <label class="f-label f-label-ico f-label-ico--mailFrom" for="mailFrom">Сотрудник</label>
-                     <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
-                  </div>
+   <div class="col-3 mb-3">
+      <label class="f-label f-label-ico f-label-ico--mailFrom" for="mailFrom">Сотрудник</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
 
-                  <div class="col-3 mb-3">
-                     <label class="f-label f-label-ico f-label-ico--mailFrom" for="mailFrom">Организация</label>
-                     <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
-                  </div>
+   <div class="col-3 mb-3">
+      <label class="f-label f-label-ico f-label-ico--mailFrom" for="mailFrom">Организация</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
 
-                  <div class="col-3 mb-3">
-                     <label class="f-label f-label-ico f-label-ico--mailFrom" for="mailFrom">Дата и время выезда</label>
-                     <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
-                  </div>
+   <div class="col-3 mb-3">
+      <label class="f-label f-label-ico f-label-ico--mailFrom" for="mailFrom">Дата и время выезда</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
 
-                  <div class="col-3 mb-3">
-                     <label class="f-label f-label-ico f-label-ico--mailFrom" for="layerName">Цель поездки</label>
-                     <select id="layerName" class="f-select w-100">
-                        <option selected="">Выберите из списка</option>
-                        <option value="1">Слой 2</option>
-                     </select>
-                  </div>
+   <div class="col-3 mb-3">
+      <label class="f-label f-label-ico f-label-ico--mailFrom" for="layerName">Цель поездки</label>
+      <select id="layerName" class="f-select w-100">
+         <option selected="">Выберите из списка</option>
+         <option value="1">Слой 2</option>
+      </select>
+   </div>
 
-                  <div class="col-6 mb-3">
-                     <label class="f-label f-label-ico f-label-ico--mailFrom" for="mailFrom">Адрес назначения</label>
-                     <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
-                  </div>
+   <div class="col-6 mb-3">
+      <label class="f-label f-label-ico f-label-ico--mailFrom" for="mailFrom">Адрес назначения</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
 
-                  <div class="col-3 mb-3">
-                     <label class="f-label f-label-ico f-label-ico--mailFrom" for="mailFrom">Планируемое время поездки</label>
-                     <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
-                  </div>
+   <div class="col-3 mb-3">
+      <label class="f-label f-label-ico f-label-ico--mailFrom" for="mailFrom">Планируемое время поездки</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
 
-                  <div class="col-3 mb-3">
-                     <label class="f-label f-label-ico f-label-ico--mailFrom" for="mailFrom">Описание поездки</label>
-                     <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
-                  </div>
-                  <div class="w-100 text-center mt-2">
-                     <button class="btn btn-primary">Зарегистрировать</button>
-                  </div>
-               </div>
-
-               
-
-               
-               
+   <div class="col-3 mb-3">
+      <label class="f-label f-label-ico f-label-ico--mailFrom" for="mailFrom">Описание поездки</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+   
+   <div class="w-100 text-center mt-2">
+      <button class="btn btn-primary">Зарегистрировать</button>
+   </div>
+</div>
             </div>
 
-            <div id="test" class="tab-content">
-               <!-- Затраты -->
+            <!-- TAB Content 2 -->
+            <div  class="tab-content">
                <div class="row mb-3">
-                   <form>
-                     <input class="f-control" name="search" type="text" placeholder="Поиск">
-                  </form>
-               </div>
-
-               <div class="table-responsive">
-                  <table class="table table-new">
-                    <thead >
-                      <tr style="background: #dedede; color: #000000">
-                        
-                        <th>Организация</th>
-                        <th>Адрес назначения</th>
-                        <th>Статус</th>
-                        <th>Время убытия</th>
-                        <th>План./ факт. <br>время прибытия</th>
-                        <th>Вне работы</th>
-                        <th>Цель поездки</th>
-                        <th>Описание поездки</th>
-
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>ГБУ АПР</td>
-                        <td>Москва ул. Подольских Курсантов д.22 стр. 8</td>
-                        <td class="text-center">В поездке</td>
-                        <td class="text-center">07.09.2020 12:30</td>
-                        <td class="text-center">07.09.2020 17:30</td>
-                        <td class="text-center">-</td>
-                        <td>Корпоративное обучение</td>
-                        <td>Корпоративное обучение</td>
-                        
-                      </tr>
-
-                      <tr>
-                        <td>ГБУ АПР</td>
-                        <td>Москва Международная</td>
-                        <td class="text-center">В поездке</td>
-                        <td class="text-center">07.09.2020 12:30</td>
-                        <td class="text-center">07.09.2020 17:30</td>
-                        <td class="text-center">-</td>
-                        <td>Корпоративное обучение</td>
-                        <td>Корпоративное обучение</td>
-                      </tr>
-
-                      <tr>
-                        <td>ГБУ АПР</td>
-                        <td>Москва Международная</td>
-                        <td class="text-center">В поездке</td>
-                        <td class="text-center">07.09.2020 12:30</td>
-                        <td class="text-center">07.09.2020 17:30</td>
-                        <td class="text-center">-</td>
-                        <td>Корпоративное обучение</td>
-                        <td>Корпоративное обучение</td>
-                      </tr>
-
-                      <tr>
-                        <td>ГБУ АПР</td>
-                        <td>Москва Международная</td>
-                        <td class="text-center">В поездке</td>
-                        <td class="text-center">07.09.2020 12:30</td>
-                        <td class="text-center">07.09.2020 17:30</td>
-                        <td class="text-center">-</td>
-                        <td>Корпоративное обучение</td>
-                        <td>Корпоративное обучение</td>
-                      </tr>
-
-                    </tbody>
-                  </table>
-                </div>
-            </div>
-
-            <div class="tab-content">
-               <!-- ФОТ -->
-               <h4 class="title mb-4">Структура ФОТ</h4>
-<h4 class="title mb-4">Анализ зарплаты по сотрудникам (в целом за период)</h4>
-
-<div class="mb-3">
-   <select class="f-select" style="width: 148px;">
-      <option selected="">Квартал 1</option>
-      <option value="1">Квартал 2</option>
-      <option value="2">Квартал 3</option>
-      <option value="2">Квартал 4</option>
-   </select>
-   <select class="f-select ml-3" style="width: 100px;">
-      <option selected="">2020</option>
-      <option value="1">2019</option>
-      <option value="2">2018</option>
-      <option value="3">2017</option>
-   </select>
-</div>
-
-<div class="row mb-3">
-   <div class="col-4 card w-25">
-      <div class="card__body">
-         <div class="card__icon">
-            <img class="card__img d-block" src="img/svg/square-ico.svg" alt="square">
-         </div>
-         <div class="card__text-box">
-            <h5 class="card__title text-primary">279 611 652,96</h5>
-            <p class="card__desc">План на 2019</p>
-         </div>
-      </div>
-   </div>
-
-   <div class="col-4 card w-25">
-      <div class="card__body">
-         <div class="card__icon">
-            <img class="card__img d-block" src="img/svg/square-ico.svg" alt="square">
-         </div>
-         <div class="card__text-box">
-            <h5 class="card__title text-secondary">194 547 402,77</h5>
-            <p class="card__desc">Всего начислено</p>
-         </div>
-      </div>
-   </div>
-
-   <div class="col-4 card w-25">
-      <div class="card__body">
-         <div class="card__icon">
-            <img class="card__img d-block" src="img/svg/square-ico.svg" alt="square">
-         </div>
-         <div class="card__text-box">
-            <h5 class="card__title text-info">69,58%</h5>
-            <p class="card__desc">Всего начислено % к плану</p>
-         </div>
-      </div>
-   </div>
+   <form>
+      <input class="f-control" name="search" type="text" placeholder="Поиск">
+   </form>
 </div>
 
 <div class="table-responsive">
-   <table id="spend" class="table">
+   <table class="table table-new">
       <thead>
-         <tr>
-            <th>Подразделение</th>
-            <th>План на 2019</th>
-            <th>Всего начислено</th>
-            <th>Всего начислено % к плану</th>
+         <tr style="background: #dedede; color: #000000">
+
+            <th>Организация</th>
+            <th>Адрес назначения</th>
+            <th>Статус</th>
+            <th>Время убытия</th>
+            <th>План./ факт. <br>время прибытия</th>
+            <th>Вне работы</th>
+            <th>Цель поездки</th>
+            <th>Описание поездки</th>
+
          </tr>
       </thead>
       <tbody>
-
          <tr>
-            <td>Административно-хозяйственное управление </td>
-            <td class="text-center"> 8 170 256,88</td>
-            <td class="text-center">3 397 223,88</td>
-            <td class="text-center">58,55%</td>
+            <td>ГБУ АПР</td>
+            <td>Москва ул. Подольских Курсантов д.22 стр. 8</td>
+            <td class="text-center">В поездке</td>
+            <td class="text-center">07.09.2020 12:30</td>
+            <td class="text-center">07.09.2020 17:30</td>
+            <td class="text-center">-</td>
+            <td>Корпоративное обучение</td>
+            <td>Корпоративное обучение</td>
+
          </tr>
 
          <tr>
-            <td>Администрация </td>
-            <td class="text-center">279 611 652,96</td>
-            <td class="text-center">131 922 575,40</td>
-            <td class="text-center">58,55%</td>
+            <td>ГБУ АПР</td>
+            <td>Москва Международная</td>
+            <td class="text-center">В поездке</td>
+            <td class="text-center">07.09.2020 12:30</td>
+            <td class="text-center">07.09.2020 17:30</td>
+            <td class="text-center">-</td>
+            <td>Корпоративное обучение</td>
+            <td>Корпоративное обучение</td>
          </tr>
 
          <tr>
-            <td>Отдел административно-хозяйственного обеспечения </td>
-            <td class="text-center">279 611 652,96</td>
-            <td class="text-center">131 922 575,40</td>
-            <td class="text-center">58,55%</td>
+            <td>ГБУ АПР</td>
+            <td>Москва Международная</td>
+            <td class="text-center">В поездке</td>
+            <td class="text-center">07.09.2020 12:30</td>
+            <td class="text-center">07.09.2020 17:30</td>
+            <td class="text-center">-</td>
+            <td>Корпоративное обучение</td>
+            <td>Корпоративное обучение</td>
          </tr>
 
          <tr>
-            <td>Отдел административно-хозяйственного обеспечения </td>
-            <td class="text-center">279 611 652,96</td>
-            <td class="text-center">131 922 575,40</td>
-            <td class="text-center">58,55%</td>
-         </tr>
-
-         <tr>
-            <td>Отдел административно-хозяйственного обеспечения </td>
-            <td class="text-center">279 611 652,96</td>
-            <td class="text-center">131 922 575,40</td>
-            <td class="text-center">58,55%</td>
+            <td>ГБУ АПР</td>
+            <td>Москва Международная</td>
+            <td class="text-center">В поездке</td>
+            <td class="text-center">07.09.2020 12:30</td>
+            <td class="text-center">07.09.2020 17:30</td>
+            <td class="text-center">-</td>
+            <td>Корпоративное обучение</td>
+            <td>Корпоративное обучение</td>
          </tr>
 
       </tbody>
@@ -397,120 +283,85 @@
 </div>
             </div>
 
+            <!-- TAB Content 3 -->
             <div class="tab-content">
-               <!-- Закупки -->
-               <h4 class="title mb-4">План закупок</h4>
-<ul class="legend">
-   <li class="legend__item"><span class="status status-1"></span>
-      <p>Статус 1</p>
-   </li>
-   <li class="legend__item"><span class="status status-2"></span>
-      <p>Статус 2</p>
-   </li>
-   <li class="legend__item"><span class="status status-3"></span>
-      <p>Статус 3</p>
-   </li>
-   <li class="legend__item"><span class="status status-4"></span>
-      <p>Статус 4</p>
-   </li>
-   <li class="legend__item"><span class="status status-5"></span>
-      <p>Статус 5</p>
-   </li>
-</ul>
+               <div class="row mb-3">
+   <select class="f-select mx-col" style="width: 96px;">
+      <option selected="">А-Я</option>
+      <option value="1">А-Я</option>
+      <option value="2">Я-А</option>
+    </select>
+    <select class="f-select mx-col" style="width: 160px;">
+      <option selected="">07.09.2020</option>
+      <option value="1">08.09.2020</option>
+      <option value="2">09.09.2020</option>
+      <option value="3">10.09.2020</option>
+    </select>
+    <form>
+      <input class="f-control mx-col" name="search" type="text" placeholder="Поиск">
+   </form>
+</div>
+
 <div class="table-responsive">
-   <table class="table">
+   <table class="table table-new">
       <thead>
-         <tr>
-            <th>№</th>
-            <th>Наименование закупки</th>
-            <th>Инициатор</th>
-            <th>Способ закупки</th>
-            <th>НМЦК</th>
-            <th>Цена контракта</th>
-            <th>Экономия</th>
-            <th>Публикация <br>закупки</th>
-            <th>Подведение <br>итогов</th>
-            <th>Заключение <br>контракта</th>
+         <tr style="background: #dedede; color: #000000">
+
+            <th>Организация</th>
+            <th>Адрес назначения</th>
+            <th>Статус</th>
+            <th>Время убытия</th>
+            <th>План./ факт. <br>время прибытия</th>
+            <th>Вне работы</th>
+            <th>Цель поездки</th>
+            <th>Описание поездки</th>
 
          </tr>
       </thead>
       <tbody>
          <tr>
-            <td class="text-center"><span class="status status-1">1</span></td>
-            <td>Оказание услуг по аренде легковых автомобилей с водителем для нужд ГБУ "АПР" в 2018-2019 годах</td>
-            <td>Дядюнов Д.А.</td>
-            <td>электронный аукцион</td>
-            <td>6 153 060,00</td>
-            <td class="text-center">6 153 060,00</td>
-            <td class="text-center">0,00</td>
-            <td class="text-center">30.11.2017</td>
-            <td class="text-center">21.12.2017</td>
-            <td class="text-center">09.01.2018</td>
+            <td>ГБУ АПР</td>
+            <td>Москва ул. Подольских Курсантов д.22 стр. 8</td>
+            <td class="text-center">В поездке</td>
+            <td class="text-center">07.09.2020 12:30</td>
+            <td class="text-center">07.09.2020 17:30</td>
+            <td class="text-center">-</td>
+            <td>Корпоративное обучение</td>
+            <td>Корпоративное обучение</td>
+
          </tr>
 
          <tr>
-            <td class="text-center"><span class="status status-5">2</span></td>
-            <td>Оказание услуг по письменному переводу для нужд ГБУ "АПР"</td>
-            <td>Степанов В.С.</td>
-            <td>открытый конкурс</td>
-            <td>1 353 979,00</td>
-            <td class="text-center">1 301 000,00</td>
-            <td class="text-center">52 979,00 </td>
-            <td class="text-center">17.10.2018</td>
-            <td class="text-center">23.10.2018</td>
-            <td class="text-center">09.11.2018</td>
+            <td>ГБУ АПР</td>
+            <td>Москва Международная</td>
+            <td class="text-center">В поездке</td>
+            <td class="text-center">07.09.2020 12:30</td>
+            <td class="text-center">07.09.2020 17:30</td>
+            <td class="text-center">-</td>
+            <td>Корпоративное обучение</td>
+            <td>Корпоративное обучение</td>
          </tr>
 
          <tr>
-            <td class="text-center"><span class="status status-4">3</span></td>
-            <td>Оказание услуг по аренде легковых автомобилей с водителем для нужд ГБУ "АПР" в 2018-2019 годах</td>
-            <td>Дядюнов Д.А.</td>
-            <td>электронный аукцион</td>
-            <td>6 153 060,00</td>
-            <td class="text-center">6 153 060,00</td>
-            <td class="text-center">0,00</td>
-            <td class="text-center">30.11.2017</td>
-            <td class="text-center">21.12.2017</td>
-            <td class="text-center">09.01.2018</td>
+            <td>ГБУ АПР</td>
+            <td>Москва Международная</td>
+            <td class="text-center">В поездке</td>
+            <td class="text-center">07.09.2020 12:30</td>
+            <td class="text-center">07.09.2020 17:30</td>
+            <td class="text-center">-</td>
+            <td>Корпоративное обучение</td>
+            <td>Корпоративное обучение</td>
          </tr>
 
          <tr>
-            <td class="text-center"><span class="status status-1">4</span></td>
-            <td>Оказание услуг по аренде легковых автомобилей с водителем для нужд ГБУ "АПР" в 2018-2019 годах</td>
-            <td>Дядюнов Д.А.</td>
-            <td>электронный аукцион</td>
-            <td>6 153 060,00</td>
-            <td class="text-center">6 153 060,00</td>
-            <td class="text-center">0,00</td>
-            <td class="text-center">30.11.2017</td>
-            <td class="text-center">21.12.2017</td>
-            <td class="text-center">09.01.2018</td>
-         </tr>
-
-         <tr>
-            <td class="text-center"><span class="status status-3">5</span></td>
-            <td>Оказание услуг по аренде легковых автомобилей с водителем для нужд ГБУ "АПР" в 2018-2019 годах</td>
-            <td>Дядюнов Д.А.</td>
-            <td>электронный аукцион</td>
-            <td>6 153 060,00</td>
-            <td class="text-center">6 153 060,00</td>
-            <td class="text-center">0,00</td>
-            <td class="text-center">30.11.2017</td>
-            <td class="text-center">21.12.2017</td>
-            <td class="text-center">09.01.2018</td>
-         </tr>
-
-         <tr>
-            <td class="text-center"><span class="status status-2">6</span></td>
-            <td>Оказание услуг по аренде легковых автомобилей с водителем для нужд ГБУ "АПР" в 2018-2019 годах</td>
-            <td>Дядюнов Д.А.</td>
-            <td>электронный аукцион</td>
-            <td>6 153 060,00</td>
-            <td class="text-center">6 153 060,00</td>
-            <td class="text-center">0,00</td>
-            <td class="text-center">30.11.2017</td>
-            <td class="text-center">21.12.2017</td>
-            <td class="text-center">09.01.2018</td>
+            <td>ГБУ АПР</td>
+            <td>Москва Международная</td>
+            <td class="text-center">В поездке</td>
+            <td class="text-center">07.09.2020 12:30</td>
+            <td class="text-center">07.09.2020 17:30</td>
+            <td class="text-center">-</td>
+            <td>Корпоративное обучение</td>
+            <td>Корпоративное обучение</td>
          </tr>
 
       </tbody>
@@ -518,13 +369,176 @@
 </div>
             </div>
 
+            <!-- TAB Content 4 -->
             <div class="tab-content">
-               <h4 class="title mb-4">(Вкладка Прочее)</h4>
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque eveniet incidunt ad autem quos esse!
-                  Natus,
-                  provident nulla labore ullam sit quo officia quaerat, itaque beatae ducimus, dolorem veritatis
-                  officiis.
-               </p>
+               <div class="row mb-3">
+   <select class="f-select mx-col" style="width: 96px;">
+      <option selected="">А-Я</option>
+      <option value="1">А-Я</option>
+      <option value="2">Я-А</option>
+    </select>
+    <select class="f-select mx-col" style="width: 160px;">
+      <option selected="">07.09.2020</option>
+      <option value="1">08.09.2020</option>
+      <option value="2">09.09.2020</option>
+      <option value="3">10.09.2020</option>
+    </select>
+    
+   <input class="f-control mx-col" name="search" type="text" placeholder="Поиск"> 
+   <button class="btn btn-primary mx-col ml-auto">Выгрузить</button>
+</div>
+
+<div class="table-responsive">
+   <table class="table table-new">
+      <thead>
+         <tr style="background: #dedede; color: #000000">
+
+            <th>Организация</th>
+            <th>Адрес назначения</th>
+            <th>Статус</th>
+            <th>Время убытия</th>
+            <th>План./ факт. <br>время прибытия</th>
+            <th>Вне работы</th>
+            <th>Цель поездки</th>
+            <th>Описание поездки</th>
+
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>ГБУ АПР</td>
+            <td>Москва ул. Подольских Курсантов д.22 стр. 8</td>
+            <td class="text-center">В поездке</td>
+            <td class="text-center">07.09.2020 12:30</td>
+            <td class="text-center">07.09.2020 17:30</td>
+            <td class="text-center">-</td>
+            <td>Корпоративное обучение</td>
+            <td>Корпоративное обучение</td>
+
+         </tr>
+
+         <tr>
+            <td>ГБУ АПР</td>
+            <td>Москва Международная</td>
+            <td class="text-center">В поездке</td>
+            <td class="text-center">07.09.2020 12:30</td>
+            <td class="text-center">07.09.2020 17:30</td>
+            <td class="text-center">-</td>
+            <td>Корпоративное обучение</td>
+            <td>Корпоративное обучение</td>
+         </tr>
+
+         <tr>
+            <td>ГБУ АПР</td>
+            <td>Москва Международная</td>
+            <td class="text-center">В поездке</td>
+            <td class="text-center">07.09.2020 12:30</td>
+            <td class="text-center">07.09.2020 17:30</td>
+            <td class="text-center">-</td>
+            <td>Корпоративное обучение</td>
+            <td>Корпоративное обучение</td>
+         </tr>
+
+         <tr>
+            <td>ГБУ АПР</td>
+            <td>Москва Международная</td>
+            <td class="text-center">В поездке</td>
+            <td class="text-center">07.09.2020 12:30</td>
+            <td class="text-center">07.09.2020 17:30</td>
+            <td class="text-center">-</td>
+            <td>Корпоративное обучение</td>
+            <td>Корпоративное обучение</td>
+         </tr>
+
+      </tbody>
+   </table>
+</div>
+            </div>
+
+            <!-- TAB Content 4 -->
+            <div class="tab-content">
+               <div class="row mb-3">
+   <select class="f-select mx-col" style="width: 96px;">
+      <option selected="">А-Я</option>
+      <option value="1">А-Я</option>
+      <option value="2">Я-А</option>
+    </select>
+    <select class="f-select mx-col" style="width: 160px;">
+      <option selected="">07.09.2020</option>
+      <option value="1">08.09.2020</option>
+      <option value="2">09.09.2020</option>
+      <option value="3">10.09.2020</option>
+    </select>
+    
+   <input class="f-control mx-col" name="search" type="text" placeholder="Поиск"> 
+   <button class="btn btn-primary mx-col ml-auto">Выгрузить</button>
+</div>
+
+<div class="table-responsive">
+   <table class="table table-new">
+      <thead>
+         <tr style="background: #dedede; color: #000000">
+
+            <th>Организация</th>
+            <th>Адрес назначения</th>
+            <th>Статус</th>
+            <th>Время убытия</th>
+            <th>План./ факт. <br>время прибытия</th>
+            <th>Вне работы</th>
+            <th>Цель поездки</th>
+            <th>Описание поездки</th>
+
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>ГБУ АПР</td>
+            <td>Москва ул. Подольских Курсантов д.22 стр. 8</td>
+            <td class="text-center">В поездке</td>
+            <td class="text-center">07.09.2020 12:30</td>
+            <td class="text-center">07.09.2020 17:30</td>
+            <td class="text-center">-</td>
+            <td>Корпоративное обучение</td>
+            <td>Корпоративное обучение</td>
+
+         </tr>
+
+         <tr>
+            <td>ГБУ АПР</td>
+            <td>Москва Международная</td>
+            <td class="text-center">В поездке</td>
+            <td class="text-center">07.09.2020 12:30</td>
+            <td class="text-center">07.09.2020 17:30</td>
+            <td class="text-center">-</td>
+            <td>Корпоративное обучение</td>
+            <td>Корпоративное обучение</td>
+         </tr>
+
+         <tr>
+            <td>ГБУ АПР</td>
+            <td>Москва Международная</td>
+            <td class="text-center">В поездке</td>
+            <td class="text-center">07.09.2020 12:30</td>
+            <td class="text-center">07.09.2020 17:30</td>
+            <td class="text-center">-</td>
+            <td>Корпоративное обучение</td>
+            <td>Корпоративное обучение</td>
+         </tr>
+
+         <tr>
+            <td>ГБУ АПР</td>
+            <td>Москва Международная</td>
+            <td class="text-center">В поездке</td>
+            <td class="text-center">07.09.2020 12:30</td>
+            <td class="text-center">07.09.2020 17:30</td>
+            <td class="text-center">-</td>
+            <td>Корпоративное обучение</td>
+            <td>Корпоративное обучение</td>
+         </tr>
+
+      </tbody>
+   </table>
+</div>
             </div>
 
          </section>
