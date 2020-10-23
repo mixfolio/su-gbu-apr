@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
    @@include("burger.js")
    @@include("sidebar-right.js")
    @@include("tabs.js")
+   @@include("exit-log.js")
 
    @@include("spend.js")
 

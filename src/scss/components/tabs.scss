@@ -26,52 +26,30 @@
    height: 64px;
    border-radius: 16px;
    box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.05);
+   cursor: pointer;
    transition: all 0.3s ease 0s;
-
-   &::before {
-      content: '';
-      width: 24px;
-      height: 24px;
+ 
+   & svg {
       margin-right: 8px;
-      background: no-repeat center / 100%;
-      transition: all 0.3s ease 0s;
-   }
-
-   &--active {
-      color: $title-color;
-      box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
-   }
-
-   &--reg::before {
-      background-image: url(../img/tab-icons/book-pen-ico-dsbl.png);
-   }
-   
-   &--reg.tab--active::before,
-   &--reg:hover::before {
-      background-image: url(../img/tab-icons/book-pen-ico.png);
-   }
-
-   &--trip::before {
-      background-image: url(../img/tab-icons/resume-ico-dsbl.png);
-   }
-
-   &--trip.tab--active::before,
-   &--trip:hover::before {
-      background-image: url(../img/tab-icons/resume-ico.png);
-   }
-
-   &--report::before {
-      background-image: url(../img/tab-icons/list-ico-dsbl.png);
-   }
-
-   &--report.tab--active::before,
-   &--report:hover::before {
-      background-image: url(../img/tab-icons/list-ico.png);
+      transition: All 0.3s ease 0s;
    }
 
    &:hover {
       color: $title-color;
       box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
    }
-   
+
+   &:hover svg {
+      fill: $primary-color;
+   }
+
+   &--active {
+      color: $title-color;
+      box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
+      cursor: default;
+   }
+
+   &--active svg {
+      fill: $primary-color;
+   }
 }
