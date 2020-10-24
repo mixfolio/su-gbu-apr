@@ -109,6 +109,10 @@ hr {
    font-size: 1.125rem;
 }
 
+.icon-muted {
+   fill: #e0e0e0;
+}
+
 .sidebar-left {
    position: relative;
    flex: 0 0 220px;
@@ -118,7 +122,6 @@ hr {
    z-index: 5;
    padding: 8px;
    display: none;
-   transition: All 0.5s ease 0s;
 }
 
 .sidebar-left--show {
@@ -138,8 +141,13 @@ hr {
    margin-bottom: 1.5rem;
    color: #bdbdbd;
    text-decoration: none;
-   //transition: All 0.3s ease 0s;
-}  
+   transition: All 0.3s ease 0s;
+   & svg {
+      margin: 11px;
+      transition: All 0.3s ease 0s;
+   }
+} 
+
 
 .nav-link--active,
 .nav-link:hover {
@@ -149,11 +157,10 @@ hr {
 .nav-link--active svg,
 .nav-link:hover svg {
    fill: $primary-color;
-   
 }
 
 .sidebar-right {
-   // flex: 0 0 100px;
+   flex: 0 0 240px;
    min-height: calc(100vh - 116px);
    background: #ffffff;
    padding: 32px;
@@ -162,10 +169,7 @@ hr {
 }
 
 .sidebar-right.show-menu {
-   // flex: 0 0 200px;
-   transition: all 0.5s ease 0s;
    flex: 0 0 64px;
-   // flex: 0 0 200px;
    padding: 32px 24px;
  
 }
@@ -363,4 +367,6 @@ hr {
    top: 48px;
    left: 24px;
 }
+
+
 
