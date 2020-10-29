@@ -21,6 +21,7 @@
 }
 
 .header-avatar {
+   position: relative;
    display: flex;
    align-items: center;
    margin-left: 3rem;
@@ -37,8 +38,58 @@
    border-radius: 50%;
    overflow: hidden;
 }
+
 .header-avatar__text {
    font-family: 'Futura PT Book';
    color: $title-color;
    padding: 0 24px 0 16px;
+}
+
+.user-menu {
+   display: none;
+   top: 40px;
+   right: -24px;
+   position: absolute;
+   padding: 24px 40px 24px 40px;
+   background-color: #fff;
+   box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.05);
+   border-radius: 16px;
+   a {
+      font-family: 'Futura PT';
+      font-size: 1rem;
+      text-decoration: none;
+      color: $title-color;
+   }
+   
+   
+}
+.profile-link {
+   margin-bottom: 16px;
+   display: flex;
+   align-items: center;
+   &::before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      background: url(../img/svg/user-ico.svg) center center no-repeat;
+      margin-right: 12px;
+   }
+
+} 
+
+.header-avatar:hover  .user-menu {
+   display: block;
+}
+
+.exit-link {
+   color: red;
+   display: flex;
+   align-items: center;
+   &::before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      background: url(../img/svg/exit-ico.svg) center center no-repeat;
+      margin-right: 12px;
+   }
 }
