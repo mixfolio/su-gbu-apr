@@ -3,6 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
    @@include("burger.js")
    @@include("sidebar-right.js")
+   @@include("current-date.js")
    @@include("tabs.js")
    //@@include("exit-log.js")
 
