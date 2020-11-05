@@ -162,6 +162,11 @@ textarea {
 }
 
 // Radio buttons
+.f-check-group {
+   display: flex;
+   height: 48px;
+   align-items: center;
+}
 
 .f-check-input:checked + .f-check-label::after {
    transform: scale(1);
