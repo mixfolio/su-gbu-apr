@@ -365,8 +365,20 @@ hr {
    margin-right: -12px;
 }
 
+.col-1 {
+   width: calc((100% / 12) - 24px);
+   margin-left: 12px;
+   margin-right: 12px;
+}
+
+.col-2 {
+   width: calc((100% / 6) - 24px);
+   margin-left: 12px;
+   margin-right: 12px;
+}
+
 .col-3 {
-   width: calc(25% - 24px);
+   width: calc((100% / 4) - 24px);
    margin-left: 12px;
    margin-right: 12px;
 }
@@ -395,7 +407,18 @@ hr {
    margin-right: 12px;
 }
 
+.col-10pc {
+   width: calc(10% - 24px);
+   flex-shrink: 0;
+   margin-left: 12px;
+   margin-right: 12px;
+}
 
+.col-30pc {
+   width: calc(30% - 24px);
+   margin-left: 12px;
+   margin-right: 12px;
+}
 
 .map {
    position: relative;
@@ -406,6 +429,4 @@ hr {
    top: 48px;
    left: 24px;
 }
-
-
 
