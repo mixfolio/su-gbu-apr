@@ -462,6 +462,7 @@ hr {
 }
 
 .progress {
+   position: relative;
    width: 100%;
    height: 24px;
    background-color: #f9f9f9;
@@ -479,6 +480,39 @@ hr {
    opacity: 0;
    transition: 1s ease;
    color: #fff;
+}
+
+.progress-text {
+   position: absolute;
+   top: -28px;
+   left: 50%;
+   transform: translate(-50%, 0);
+   color: #000000;
+}
+
+ progress::-webkit-progress-bar {
+   background-color: #f9f9f9;
+   border-radius: 12px;
+ }
+ progress::-webkit-progress-value {
+   background-color: $primary-color;
+   border-radius: 12px;
+ }
+ progress::-moz-progress-bar {
+   background-color: #f9f9f9;
+   border-radius: 12px;
+ }
+
+progress {
+   display: block;
+   color: #fff;
+   background-color: #f9f9f9;
+   border-radius: 12px;
+   width: 100%;
+   height: 24px;
+   line-height: 24px;
+   font-size: 16px;
+   text-align: center;
 }
 
 
