@@ -233,6 +233,8 @@
    </div>
 </div>
 
+<div class="progress"><div class="progress-done bg-error" data-done="70">70%</div></div>
+
 <script>
    function on_file_select() {
       if (document.getElementById('subject').files.length != 0) {
@@ -242,4 +244,14 @@
       }
    }
    on_file_select();
+
+
+   const progress = document.querySelector('.progress-done');
+
+   setTimeout(() => {
+      progress.style.width = progress.getAttribute('data-done') + '%';
+      progress.style.opacity = 1;
+
+   }, 500);
+   
 </script>

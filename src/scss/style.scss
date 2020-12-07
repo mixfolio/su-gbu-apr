@@ -110,6 +110,31 @@ hr {
    color: #bdbdbd
 }
 
+.bg-primary {
+   background-color: $primary-color !important;
+}
+
+.bg-secondary {
+   background-color: $secondary-color !important;
+}
+
+.bg-info {
+   background-color: $info-color !important;
+}
+
+.bg-danger {
+   background-color: $danger-color !important;
+}
+
+.bg-success {
+   background-color: $success-color !important;
+}
+
+.bg-error {
+   background-color: $error-color !important;
+}
+
+
 
 .main {
    position: relative;
@@ -435,4 +460,26 @@ hr {
    top: 48px;
    left: 24px;
 }
+
+.progress {
+   width: 100%;
+   height: 24px;
+   background-color: #f9f9f9;
+   border-radius: 12px;
+}
+
+.progress-done {
+   height: 100%;
+   background-color: #4c51cc;
+   border-radius: 12px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 0;
+   opacity: 0;
+   transition: 1s ease;
+   color: #fff;
+}
+
+
 
