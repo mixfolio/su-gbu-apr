@@ -1,11 +1,5 @@
 //tables
 
-// tbody, td, tfoot, th, thead, tr {
-//    border-color: inherit;
-//    border-style: solid;
-//    border-width: 0;
-// }
-
 table,
 th,
 td
@@ -34,6 +28,13 @@ td {
    font-family: 'Futura PT Book';
    font-size: 0.875rem;
    color: #333333;
+}
+
+.sticky th {
+   position: sticky;
+   top: 0;
+   border: 0;
+   background: #dedede;
 }
 
 .table-responsive {
