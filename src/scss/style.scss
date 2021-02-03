@@ -50,6 +50,11 @@ hr {
 .d-flex {
    display: flex;
 }
+
+.flex-wrap {
+   flex-wrap: wrap;
+}
+
 .justify-content-between {
    justify-content: space-between;
 }
@@ -129,6 +134,55 @@ hr {
    background-color: $error-color !important;
 }
 
+.link-primary {
+   color: $primary-color;
+   &:hover {
+      color: darken($primary-color, 10%);
+   }
+}
+
+.link-secondary {
+   color: $secondary-color;
+   &:hover {
+      color: darken($secondary-color, 10%);
+   }
+}
+
+.link-info {
+   color: $info-color;
+   &:hover {
+      color: darken($info-color, 10%);
+   }
+}
+
+.link-danger {
+   color: $danger-color;
+   &:hover {
+      color: darken($danger-color, 10%);
+   }
+}
+
+.link-success {
+   color: $success-color;
+   &:hover {
+      color: darken($success-color, 10%);
+   }
+}
+
+.link-error {
+   color: $error-color;
+   &:hover {
+      color: darken($error-color, 10%);
+   }
+}
+
+.link-muted {
+   color: #bdbdbd;
+   &:hover {
+      color: darken(#bdbdbd, 10%);
+   }
+}
+
 
 
 .main {
@@ -204,7 +258,7 @@ hr {
    background: #ffffff;
    padding: 32px;
    border-left: 1px solid #f2f2f2;
-   transition: all 0.5s ease 0s;
+   // transition: all 0.5s ease 0s;
 }
 
 #sidebarBtn img {

@@ -1058,6 +1058,11 @@ hr {
   display: flex;
 }
 
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .justify-content-between {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1145,6 +1150,62 @@ hr {
 
 .bg-error {
   background-color: #CC4C63 !important;
+}
+
+.link-primary {
+  color: #4C51CC;
+}
+
+.link-primary:hover {
+  color: #3338b2;
+}
+
+.link-secondary {
+  color: #4CCCA5;
+}
+
+.link-secondary:hover {
+  color: #33b28b;
+}
+
+.link-info {
+  color: #63BDFF;
+}
+
+.link-info:hover {
+  color: #30a7ff;
+}
+
+.link-danger {
+  color: #FF9900;
+}
+
+.link-danger:hover {
+  color: #cc7a00;
+}
+
+.link-success {
+  color: #00B55E;
+}
+
+.link-success:hover {
+  color: #008244;
+}
+
+.link-error {
+  color: #CC4C63;
+}
+
+.link-error:hover {
+  color: #b2334a;
+}
+
+.link-muted {
+  color: #bdbdbd;
+}
+
+.link-muted:hover {
+  color: #a4a4a4;
 }
 
 .main {
@@ -1237,9 +1298,6 @@ hr {
   background: #ffffff;
   padding: 32px;
   border-left: 1px solid #f2f2f2;
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
 }
 
 #sidebarBtn img {
