@@ -194,34 +194,60 @@
  </nav>
 
 
+ <nav class="mb-3" aria-label="pageNavigation">
+   <ul class="pagination">
+     <li class="page-item">
+       <a class="page-link" href="#" aria-label="Previous">
+         <span aria-hidden="true">
+            <svg width="8" height="16" viewBox="0 0 8 16" stroke="#ADADAD" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.5 6L2 10.5L6.5 15"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+         </span>
+       </a>
+     </li>
+     <li class="page-item"><button style="font-size: 1rem;" class="page-link active">1</button></li>
+     <li class="page-item"><button class="page-link">2</button></li>
+     <li class="page-item"><button class="page-link">3</button></li>
+     <li class="page-item">
+       <a class="page-link" href="#" aria-label="Next">
+         <span aria-hidden="true">
+            <svg width="8" height="16" viewBox="0 0 8 16" stroke="#ADADAD" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.5 6L6 10.5L1.5 15"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg></span>
+       </a>
+     </li>
+   </ul>
+ </nav>
+
+
 <div class="row">
 
-   <div class="col-6 mb-3">
+   <div class="col-lg-4 col-md-6 col-12 mb-3">
       <label class="f-label f-label-ico f-label-ico--desc" for="archive-1">Архивный номер документа</label>
       <input id="archive-1" name="mail-from" class="f-control w-100" type="text" placeholder="Введите номер">
    </div>
 
-   <div class="col-6 mb-3">
+   <div class="col-lg-4 col-md-6 col-12 mb-3">
       <label class="f-label f-label-ico f-label-ico--desc" for="archive-2">Название документа</label>
       <input id="archive-2" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
    </div>
 
-   <div class="col-6 mb-3">
+   <div class="col-lg-4 col-md-6 col-12 mb-3">
       <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Номер документа по факту</label>
       <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите номер">
    </div>
 
-   <div class="col-6 mb-3">
+   <div class="col-lg-4 col-md-6 col-12 mb-3">
       <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Число страниц</label>
       <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите число">
    </div>
 
-   <div class="col-6 mb-3">
+   <div class="col-lg-4 col-md-6 col-12 mb-3">
       <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Тип документа</label>
       <input id="mailFrom" name="mail-from" class="f-control f-control-ico f-control-ico--search  w-100" type="text" placeholder="Введите текст">
    </div>
 
-   <div class="col-6 mb-3">
+   <div class="col-lg-4 col-md-6 col-12 mb-3">
       <label class="f-label f-label-ico f-label-ico--desc" for="select-podved">Подведомственность</label>
       <select id=select-podved class="f-select w-100">
          <option selected="">Выбрать</option>
@@ -233,17 +259,17 @@
    </div>
 
 
-   <div class="col-6 mb-3">
+   <div class="col-lg-4 col-md-6 col-12 mb-3">
       <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Расположение</label>
       <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
    </div>
 
-   <div class="col-6 mb-3">
+   <div class="col-lg-4 col-md-6 col-12 mb-3">
       <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Примечание</label>
       <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
    </div>
    
-   <div class="col-8 mb-6">
+   <div class="col-md-8 col-12">
       <label class="f-label f-label-ico f-label-ico--attachment" for="attachment">Файлы</label>
       
       <div class="label-attachment">
@@ -253,7 +279,7 @@
       </div>
    </div>
 
-   <div class="col-3 text-right mt-3">
+   <div class="col-md-4 col-12 text-right mt-3">
       <button class="btn btn-primary">Добавить документ в архив</button>
    </div>
 
@@ -261,7 +287,7 @@
       Загружено на <span id="value">25</span>%
    </progress> -->
 
-   <div id="progress" class="progress mx-col"><div id="value" class="progress-done bg-error" data-done="47"><span class="progress-text">Загружено 100 МБ из 900 Мб</span></div></div>
+   <div id="progress" class="progress mt-6 mx-col"><div id="value" class="progress-done bg-error" data-done="47"><span class="progress-text">Загружено 100 МБ из 900 Мб</span></div></div>
 
    <!-- <div class="progress mx-col"><div class="progress-done bg-error" data-done="70">Загружено 100 МБ из 900 Мб</div></div> -->
 </div>
