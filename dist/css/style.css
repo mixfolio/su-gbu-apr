@@ -207,6 +207,12 @@
   margin-right: 12px;
 }
 
+.col-10 {
+  width: calc((100% / 12 * 10) - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
 .col-12 {
   width: calc((100% / 12 * 12) - 24px);
   margin-left: 12px;
@@ -855,6 +861,47 @@ textarea {
   -o-transition: transform 0.3s ease 0s;
   transition: transform 0.3s ease 0s;
   transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+
+.form-check-input {
+  display: none;
+}
+
+.form-check-input:checked + .form-check-label::after {
+  display: block;
+}
+
+.form-check-label {
+  font-family: 'Futura PT';
+  font-size: 1rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.form-check-label::before {
+  content: '';
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16px;
+          flex: 0 0 16px;
+  height: 16px;
+  background-color: #E8E9FE;
+  margin-right: 8px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.form-check-label::after {
+  content: url(../../img/svg/check-ico.svg);
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: none;
 }
 
 .card {

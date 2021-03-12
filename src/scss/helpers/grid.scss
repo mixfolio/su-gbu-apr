@@ -41,6 +41,12 @@
    margin-right: 12px;
 }
 
+.col-10 {
+   width: calc((100% / 12 * 10) - 24px);
+   margin-left: 12px;
+   margin-right: 12px;
+}
+
 .col-12 {
    width: calc((100% / 12 * 12) - 24px);
    margin-left: 12px;

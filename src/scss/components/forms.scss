@@ -217,3 +217,41 @@ textarea {
    }
 }
 
+
+.form-check-input {
+   display: none;
+}
+
+.form-check-input:checked + .form-check-label::after {
+   display: block;
+}
+
+.form-check-label {
+   font-family: 'Futura PT';
+   font-size: 1rem;
+   display: inline-flex;
+   align-items: center;
+   position: relative;
+   cursor: pointer;
+}
+
+.form-check-label::before {
+   content: '';
+   // align-self: flex-start;
+   flex: 0 0 16px;
+   height: 16px;
+   background-color: #E8E9FE;
+   margin-right: 8px;
+   border-radius: 4px;
+   position: relative;
+}
+
+.form-check-label::after {
+   content: url(../../img/svg/check-ico.svg);
+
+   top: 0;
+   left: 0;
+   position: absolute;
+   display: none;
+}
+
