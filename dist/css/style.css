@@ -522,6 +522,78 @@ td {
   fill: #4C51CC;
 }
 
+.list-group-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: 12px;
+  margin-left: 12px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #4C51CC;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.list-group-item {
+  width: 100%;
+  border-bottom: 1px solid #4C51CC;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+.list-group-link {
+  padding: 16px 24px;
+  font-family: 'Futura PT Demi';
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: #BFBFBF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  height: 64px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.list-group-link svg {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 24px;
+          flex: 0 0 24px;
+  margin-right: 8px;
+  -webkit-transition: All 0.3s ease 0s;
+  -o-transition: All 0.3s ease 0s;
+  transition: All 0.3s ease 0s;
+}
+
+.list-group-link:hover {
+  color: #fff;
+  background-color: #d3d3d3;
+}
+
+.list-group-link:hover svg {
+  fill: #fff;
+}
+
+.list-group-link--active {
+  color: #fff;
+  cursor: default;
+  background-color: #4C51CC;
+}
+
+.list-group-link--active svg {
+  color: #fff;
+}
+
 textarea {
   resize: none;
   vertical-align: middle;
