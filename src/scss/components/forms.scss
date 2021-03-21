@@ -5,12 +5,18 @@ textarea {
 }
 
 .f-label {
-   display: block;
+   display: flex;
+   align-items: center;
    font-family: 'Futura PT Demi';
    font-size: 0.75rem;
    text-transform: uppercase;
    color: #adadad;
    margin-bottom: 8px;
+   &::before {
+      font-size: 20px;
+      color: $primary-color;
+      margin-right: 8px;
+   }
 }
 
 .f-label-ico {

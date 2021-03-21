@@ -28,20 +28,29 @@
    box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.05);
    cursor: pointer;
    transition: all 0.3s ease 0s;
- 
-   & svg {
+
+   &::before {
+      font-size: 24px;
       margin-right: 8px;
-      transition: All 0.3s ease 0s;
    }
+ 
+   // & svg {
+   //    margin-right: 8px;
+   //    transition: All 0.3s ease 0s;
+   // }
 
    &:hover {
       color: $title-color;
       box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
    }
 
-   &:hover svg {
-      fill: $primary-color;
+   &:hover::before {
+      color: $primary-color;
    }
+
+   // &:hover svg {
+   //    fill: $primary-color;
+   // }
 
    &--active {
       color: $title-color;
@@ -49,9 +58,13 @@
       cursor: default;
    }
 
-   &--active svg {
-      fill: $primary-color;
+   &--active::before {
+      color: $primary-color;
    }
+
+   // &--active svg {
+   //    fill: $primary-color;
+   // }
 }
 
 .list-group-list {
@@ -87,12 +100,17 @@
    height: 64px;
    cursor: pointer;
    transition: all 0.3s ease 0s;
- 
-   & svg {
-      flex: 0 0 24px;
+
+   &::before {
+      font-size: 24px;
       margin-right: 8px;
-      transition: All 0.3s ease 0s;
    }
+ 
+   // & svg {
+   //    flex: 0 0 24px;
+   //    margin-right: 8px;
+   //    transition: All 0.3s ease 0s;
+   // }
 
    &:hover {
       color: #fff;
@@ -100,9 +118,13 @@
       background-color: #d3d3d3;
    }
 
-   &:hover svg {
-      fill: #fff;;
+   &:hover:before {
+      color: #fff;
    }
+
+   // &:hover svg {
+   //    fill: #fff;;
+   // }
 
    &--active {
       color: #fff;
@@ -111,7 +133,11 @@
       background-color: $primary-color;
    }
 
-   &--active svg {
+   &--active::before {
       color: #fff;
    }
+
+   // &--active svg {
+   //    color: #fff;
+   // }
 }

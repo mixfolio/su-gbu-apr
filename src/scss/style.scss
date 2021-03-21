@@ -1,6 +1,7 @@
 
 @import "variables";
 @import "helpers/fonts";
+@import "helpers/icons";
 @import "helpers/helpers-temp";
 @import "helpers/grid";
 @import "components/buttons";
@@ -240,6 +241,10 @@ hr {
       margin: 11px;
       transition: All 0.3s ease 0s;
    }
+   &::before {
+      font-size: 26px;
+      margin: 11px;
+   }
 } 
 
 
@@ -248,10 +253,15 @@ hr {
    color: #000000;
 }
 
-.nav-link--active svg,
-.nav-link:hover svg {
-   fill: $primary-color;
+.nav-link--active::before,
+.nav-link:hover::before {
+   color: $primary-color;
 }
+
+// .nav-link--active svg,
+// .nav-link:hover svg {
+//    fill: $primary-color;
+// }
 
 .sidebar-right {
    flex: 0 0 240px;
@@ -516,6 +526,25 @@ progress {
    font-size: 16px;
    text-align: center;
 }
+
+@media print {
+   body * {
+     visibility: hidden;
+   }
+   
+   .header {
+     display: none;
+   } 
+   
+   #section-to-print, #section-to-print * {
+     visibility: visible;
+   }
+   #section-to-print {
+     position: absolute;
+     left: 0;
+     top: 0;
+   }
+ }
 
 
 
