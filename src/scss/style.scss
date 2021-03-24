@@ -415,6 +415,12 @@ hr {
    border-radius: 8px;
    overflow: hidden;
    margin-right: 8px;
+   font-size: 20px;
+   color: $primary-color;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #EBECF8;
 }
 
 .user__role {
