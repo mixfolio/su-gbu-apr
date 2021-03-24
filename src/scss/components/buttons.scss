@@ -75,7 +75,6 @@
    }
    &:hover {
       box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.3);
-      transform: rotate(90deg)
    }
 
    &-sm {
@@ -85,7 +84,11 @@
       font-size: 1rem;
       text-decoration: none;
       color: $primary-color;
+      &:hover {
+         transform: rotate(90deg)
+      }
    }
+
 }
 
 
