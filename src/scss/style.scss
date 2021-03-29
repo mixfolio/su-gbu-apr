@@ -282,9 +282,9 @@ hr {
  
 }
 
-// .sidebar-right.show-menu > div::before {
-//    background-color: red!important;
-// }
+.sidebar-right.show-menu .icon-arr-next::before {
+   transform: rotate(180deg);
+}
 
 .show-menu {
    .sbar--show {

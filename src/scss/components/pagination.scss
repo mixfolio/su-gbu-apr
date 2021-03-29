@@ -29,6 +29,12 @@
    font-weight: 500;
    text-decoration: none;
    transition: All 0.3s ease 0s;
+
+   &:hover {
+      color: $primary-color;
+      transition: All 0.3s ease 0s;
+   }
+
    & span {
       color: #adadad;
       &:hover {
