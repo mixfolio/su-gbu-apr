@@ -28,8 +28,8 @@
    background-color: #ffffff;
    //filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.14));
    border-radius: 24px;
-   cursor: pointer;
    background: #F5F6FF;
+   cursor: pointer;
 }
 
 .header-avatar__pict {
@@ -61,36 +61,36 @@
    border-radius: 16px;
    //border: 1px solid $primary-color;
    transition: All 0.3s ease 0s;
-   .profile-link,
-   .exit-link {
-      font-family: 'Futura PT';
-      font-size: 1rem;
-      text-decoration: none;
-      color: $title-color;
-      display: flex;
-      align-items: center;
-      &::before {
-         color: $primary-color;
-         font-size: 16px;
-         margin-right: 12px;
-         // content: '';
-         // width: 16px;
-         // height: 16px;
-         // margin-right: 12px;
-         // background-position: center;
-         // background-repeat: no-repeat;
-      }
-   }
-   .profile-link {
-      margin-bottom: 16px;
-      // &::before {
-      //    background-image: url(../img/svg/user-ico.svg);
-      // }
-   }
-   // .exit-link::before {
-   //    background-image: url(../img/svg/exit-ico.svg);
-   // } 
 }
+
+.user-menu li {
+   margin-bottom: 16px;
+}
+
+.user-menu li:last-child {
+   margin-bottom: 0;
+}
+
+.profile-link
+{
+   font-family: 'Futura PT';
+   font-size: 1rem;
+   text-decoration: none;
+   color: #bdbdbd;
+   display: flex;
+   align-items: center;
+   transition: All 0.3s ease 0s;
+   &:hover {
+      color: $title-color
+   }
+   &::before {
+      color: #bdbdbd;
+      font-size: 16px;
+      margin-right: 12px;
+   }
+}
+   
+
 
 .header-avatar:hover  .user-menu {
    display: block;
