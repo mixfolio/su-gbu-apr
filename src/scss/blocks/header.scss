@@ -88,6 +88,9 @@
       font-size: 16px;
       margin-right: 12px;
    }
+   &:hover::before {
+      color: $primary-color;
+   }
 }
    
 
