@@ -219,32 +219,32 @@
 <div class="row">
 
    <div class="col-lg-4 col-md-6 col-12 mb-3">
-      <label class="f-label f-label-ico f-label-ico--desc" for="archive-1">Архивный номер документа</label>
+      <label class="f-label icon-writing" for="archive-1">Архивный номер документа</label>
       <input id="archive-1" name="mail-from" class="f-control w-100" type="text" placeholder="Введите номер">
    </div>
 
    <div class="col-lg-4 col-md-6 col-12 mb-3">
-      <label class="f-label f-label-ico f-label-ico--desc" for="archive-2">Название документа</label>
+      <label class="f-label icon-writing"" for="archive-2">Название документа</label>
       <input id="archive-2" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
    </div>
 
    <div class="col-lg-4 col-md-6 col-12 mb-3">
-      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Номер документа по факту</label>
+      <label class="f-label icon-writing"" for="mailFrom">Номер документа по факту</label>
       <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите номер">
    </div>
 
    <div class="col-lg-4 col-md-6 col-12 mb-3">
-      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Число страниц</label>
+      <label class="f-label icon-writing"" for="mailFrom">Число страниц</label>
       <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите число">
    </div>
 
    <div class="col-lg-4 col-md-6 col-12 mb-3">
-      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Тип документа</label>
+      <label class="f-label icon-writing"" for="mailFrom">Тип документа</label>
       <input id="mailFrom" name="mail-from" class="f-control f-control-ico f-control-ico--search  w-100" type="text" placeholder="Введите текст">
    </div>
 
    <div class="col-lg-4 col-md-6 col-12 mb-3">
-      <label class="f-label f-label-ico f-label-ico--desc" for="select-podved">Подведомственность</label>
+      <label class="f-label icon-writing"" for="select-podved">Подведомственность</label>
       <select id=select-podved class="f-select w-100">
          <option selected="">Выбрать</option>
          <option value="1">Выбор 1</option>
@@ -256,17 +256,28 @@
 
 
    <div class="col-lg-4 col-md-6 col-12 mb-3">
-      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Расположение</label>
+      <label class="f-label icon-writing"" for="mailFrom">Расположение</label>
       <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
    </div>
 
    <div class="col-lg-4 col-md-6 col-12 mb-3">
-      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Примечание</label>
+      <label class="f-label icon-writing" for="mailFrom">Примечание</label>
       <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-lg-4 col-md-6 col-12 mb-3">
+      <label class="f-label icon-writing"" for="select-podved">Подведомственность</label>
+      <select multiple id=select-podved class="f-select w-100">
+         <option selected="">Выбрать</option>
+         <option value="1">Выбор 1</option>
+         <option value="2">Выбор 2</option>
+         <option value="3">Выбор 3</option>
+       </select>
+      <!-- <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст"> -->
    </div>
    
    <div class="col-md-8 col-12">
-      <label class="f-label f-label-ico f-label-ico--attachment" for="attachment">Файлы</label>
+      <label class="f-label icon-clip" for="attachment">Файлы</label>
       
       <div class="label-attachment">
          <input id="subject" name="subject" class="f-control w-100 input-attachment" type="file" onchange="on_file_select()" placeholder="Введите текст">
@@ -278,6 +289,7 @@
    <div class="col-md-4 col-12 text-right mt-3">
       <button class="btn btn-primary">Добавить документ в архив</button>
    </div>
+   
 
    <!-- <progress class="mx-col" max="100" value="25">
       Загружено на <span id="value">25</span>%

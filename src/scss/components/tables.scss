@@ -74,3 +74,7 @@ td {
 .table-info--show {
    display: table;
 }
+
+.phone-book tbody tr:nth-child(2n-1) {
+   background-color:  #f1f2ff;
+ }

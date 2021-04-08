@@ -67,9 +67,6 @@
    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);
    cursor: pointer;
    transition: All 0.3s ease 0s;
-   &::before {
-
-   }
    & img {
       display: block;
    }
@@ -89,6 +86,11 @@
       }
    }
 
+}
+
+.btn-primary {
+   background: $primary-color;
+   color: #ffffff;
 }
 
 

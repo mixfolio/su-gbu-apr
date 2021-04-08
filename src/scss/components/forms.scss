@@ -19,102 +19,6 @@ textarea {
    }
 }
 
-.f-label-ico {
-   padding-left: 30px;
-   position: relative;
-   &::before {
-      position: absolute;
-      left: 0;
-      top: -4px;
-   }
-
-   &--mailFrom::before {
-      content: url(../img/svg/mailing-icons/mail-from-ico.svg);
-   }
-
-   &--mailTo::before {
-      content: url(../img/svg/mailing-icons/mail-to-ico.svg);
-   }
-
-   &--subject::before {
-
-      content: url(../img/svg/mailing-icons/open-envelop-ico.svg);
-   }
-
-   &--message::before {
-      content: url(../img/svg/mailing-icons/envelope-ico.svg);
-   }
-
-   &--attachment::before {
-      content: url(../img/svg/mailing-icons/clip-ico.svg);
-   }
-
-   //Page profile
-
-   &--departament::before {
-      content: url(../img/svg/profile-icons/home-ico.svg);
-   }
-
-   &--position::before {
-      content: url(../img/svg/profile-icons/position-ico.svg);
-   }
-
-   &--accessPerm::before {
-      content: url(../img/svg/profile-icons/lock-ico.svg);
-   }
-
-   &--userMail::before {
-      content: url(../img/svg/profile-icons/envelope-ico.svg);
-   }
-
-   &--cityPhone::before {
-      content: url(../img/svg/profile-icons/phone-ico.svg);
-   }
-
-   &--mobPhone::before {
-      content: url(../img/svg/profile-icons/mobile-phone-ico.svg);
-   }
-
-   &--userLogin::before {
-      content: url(../img/svg/profile-icons/user-key-ico.svg);
-   }
-
-   &--userPass::before {
-      content: url(../img/svg/profile-icons/key-ico.svg);
-   }
-
-   &--userPhoto::before {
-      content: url(../img/svg/profile-icons/user-photo-ico.svg);
-   }
-
-   //Page exit-log
-
-   &--user::before {
-      content: url(../img/svg/form-label-icons/user-ico.svg);
-   }
-
-   &--building::before {
-      content: url(../img/svg/form-label-icons/building-ico.svg);
-   }
-
-   &--time::before {
-      content: url(../img/svg/form-label-icons/calendar-ico.svg);
-   }
-
-   &--goal::before {
-      content: url(../img/svg/form-label-icons/goal-ico.svg);
-   }
-
-   &--address::before {
-      content: url(../img/svg/form-label-icons/address-ico.svg);
-   }
-
-   &--desc::before {
-      content: url(../img/svg/form-label-icons/writing-ico.svg);
-   }
-}
-
-
 .f-control {
    height: 48px;
    border: none;
@@ -253,7 +157,7 @@ textarea {
 }
 
 .form-check-label::after {
-   content: url(../../img/svg/check-ico.svg);
+   content: url(../img/svg/check-ico.svg);
 
    top: 0;
    left: 0;

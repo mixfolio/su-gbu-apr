@@ -237,10 +237,6 @@ hr {
    color: #bdbdbd;
    text-decoration: none;
    transition: All 0.3s ease 0s;
-   & svg {
-      margin: 11px;
-      transition: All 0.3s ease 0s;
-   }
    &::before {
       font-size: 26px;
       margin: 11px;
