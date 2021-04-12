@@ -75,6 +75,9 @@ td {
    display: table;
 }
 
-.phone-book tbody tr:nth-child(2n-1) {
+.phone-book tbody td:nth-last-child(-n+4){
    background-color:  #f1f2ff;
- }
+}
+.phone-book tbody tr:nth-child(2n+1) td{
+   background-color:  #fff;
+}
