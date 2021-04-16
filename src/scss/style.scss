@@ -281,10 +281,18 @@ hr {
 .sidebar-right.show-menu .icon-arr-next::before {
    transform: rotate(180deg);
 }
-// .icon-plus {
-//    display: flex;
-//    align-items: center;
-// }
+.icon-plus.icon-text  {
+   display: flex;
+   align-items: center;
+}
+
+.icon-plus.icon-text:hover:before  {
+   color: $primary-color;
+}
+
+.icon-plus.icon-text:before  {
+   margin-right: 8px;
+}
 
 
 

@@ -177,6 +177,13 @@ option {
 .vscomp-ele {
    max-width: none;
 }
+
+.vscomp-wrapper {
+   font-family: 'Futura PT Book';
+   font-size: 18px;
+   font-weight: normal;
+}
+
 .vscomp-wrapper.focused .vscomp-toggle-button, .vscomp-wrapper:focus .vscomp-toggle-button {
    box-shadow: none;
 }
@@ -191,11 +198,9 @@ option {
    background-color: #f9f9f9;
 }
 
-.vscomp-value {
-   font-family: 'Futura PT Book';
-   font-size: 18px;
+.vscomp-wrapper:not(.has-value) .vscomp-value {
+   opacity: 1;
 }
-
 .vscomp-arrow {
    right: 8px;
 }
