@@ -67,6 +67,24 @@
    // }
 }
 
+.list-group-block {
+   width: 96px;
+   transition: All 0.3s ease 0s;
+}
+
+.list-group-block span {
+   display: none;
+}
+
+.list-group-block:hover {
+   width: 240px;
+}
+
+.list-group-block:hover span {
+   display: inline;
+   // transition: All 0.3s ease 0s;
+}
+
 .list-group-list {
    display: flex;
    flex-wrap: wrap;
