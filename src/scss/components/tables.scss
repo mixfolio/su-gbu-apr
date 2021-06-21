@@ -1,32 +1,33 @@
 //tables
 
-table,
-th,
-td
- {
-   border-collapse: collapse;
-}
+// table,
+// th,
+// td
+//  {
+//    border-collapse: collapse;
+// }
 .table {
    width: 100%;
-   border-color: #dee2e6;
 }
 .table > :not(caption) > * > *{
-   padding: 1.5rem 0.5rem;
+   padding: 16px 12px;
 }
 .table  th {
-   padding: 0.5rem 0.5rem;
+   padding: 8px 12px;
 }
 
 th {
-   font-family: 'Futura PT Book';
-   font-size: 0.875rem;
-   border: 1px solid #ffffff;
+   font-size: 0.75rem;
+   line-height: 1rem;
+   text-transform: uppercase;
+   color: $primary-color;
+   background-color: #F0F1F9;
    //color: #828282;
 }
 
 td {
-   font-family: 'Futura PT Book';
-   font-size: 0.875rem;
+   font-size: 1rem;
+   background-color: #fff;
    //color: #333333;
 }
 
@@ -46,18 +47,17 @@ td {
    background: #878CFA;
 }
 
-.table>:not(caption)>*>* {
-   //border-bottom-width: 1px;
-   border-bottom: 1px solid #dee2e6;
-}
+// .table>:not(caption)>*>* {
+//    //border-bottom-width: 1px;
+//    border-bottom: 1px solid #dee2e6;
+// }
 
-.table-bordered>:not(caption)>*>* {
-   border-width: 1px 0;
-   border: 1px solid #dee2e6;
-}
+// .table-bordered>:not(caption)>*>* {
+//    border-width: 1px 0;
+//    border: 1px solid #dee2e6;
+// }
 
 .tr-accent-1>td {
-   font-family: 'Futura PT';
    background-color: #F1F2FF;
 }
 

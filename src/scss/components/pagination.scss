@@ -25,9 +25,9 @@
    cursor: pointer;
    
    color: #adadad;
-   font-family: 'Futura PT';
+
    font-size: 1rem;
-   font-weight: 500;
+   font-weight: 400;
    text-decoration: none;
    transition: All 0.3s ease 0s;
 
@@ -54,7 +54,6 @@
 
 }
 .page-link.active {
-   font-family: 'Futura PT Demi';
-   font-weight: 500;
+   font-weight: 600;
    color: $primary-color;
 }

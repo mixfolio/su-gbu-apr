@@ -13,9 +13,9 @@
       padding: 64px;
    }
    &__title {
-      font-family: 'Futura PT';
       color: $title-color;
-      font-size: 28px;
+      font-size: 24px;
+      line-height: 24px;
    }
    & .f-control {
       width: 300px;
@@ -26,14 +26,12 @@
    }
    &__reg {
       display: block;
-      font-family: 'Futura PT';
       color: $title-color;
       text-decoration: none;
       margin-bottom: 24px;
    }
    &__text {
       display: block;
-      font-family: 'Futura PT Book';
       color: #adadad;
       text-decoration: none;
    }
