@@ -77,6 +77,7 @@
 .list-group-block {
    width: 96px;
    transition: All 0.3s ease 0s;
+   align-self: flex-start;
 }
 
 .list-group-block span {
@@ -97,15 +98,15 @@
    flex-wrap: wrap;
    margin-right: 12px;
    margin-left: 12px;
-   margin-bottom: 1.5rem;
-   border: 1px solid $primary-color;
+   //margin-bottom: 1.5rem;
+   //border: 1px solid $primary-color;
    border-radius: 16px;
    overflow: hidden;
 }
 
 .list-group-item {
    width: 100%;
-   border-bottom: 1px solid $primary-color;
+   //border-bottom: 1px solid #f6f6f6;
 
    &:last-child {
       border-bottom: none;

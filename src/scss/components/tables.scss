@@ -35,7 +35,7 @@ td {
    position: sticky;
    top: 0;
    border: 0;
-   background: #dedede;
+   // background: #dedede;
 }
 
 .table-responsive {
@@ -59,6 +59,13 @@ td {
 
 .tr-accent-1>td {
    background-color: #F1F2FF;
+}
+
+tr:hover>td {
+   //box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+   position: relative;
+   z-index: 10;
+   box-shadow: 0 0 8px rgba(0,0,0,.2);
 }
 
 .table-info {
