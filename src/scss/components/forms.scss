@@ -18,7 +18,7 @@ option {
    line-height: 1rem;
    font-weight: 600;
    text-transform: uppercase;
-   color: #b8b8b8;
+   color: $primary-color;
    margin-bottom: 8px;
    &::before {
       font-size: 20px;
