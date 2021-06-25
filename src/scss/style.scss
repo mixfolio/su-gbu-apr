@@ -1,7 +1,7 @@
 
 @import "variables";
-// @import "helpers/fonts";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import "helpers/fonts";
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 @import "helpers/icons";
 @import "helpers/helpers-temp";
 @import "helpers/grid";
@@ -488,6 +488,13 @@ hr {
    width: calc(30% - 24px);
    margin-left: 12px;
    margin-right: 12px;
+}
+
+.text-label {
+   font-family: 'Futura PT Demi';
+   font-size: 0.75rem;
+   color: #adadad;
+   text-transform: uppercase;
 }
 
 .map {
