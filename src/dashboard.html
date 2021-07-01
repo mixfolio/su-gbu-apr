@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/style.min.css">
-   <title>Система управления ГБУ АПР</title>
+   <title>СУ ГБУ АПР | Панель управления</title>
    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
 </head>
@@ -15,56 +15,85 @@
    @@include("_header.html")
 
    <div class="content">
-      
+      <!-- Start Sidebar-left -->
       <div class="sidebar-left">
          <ul class="sidebar-left__menu">
             <!-- Home -->
             <li>
-               <a href="home.html" class="nav-link icon-home">Главная</a>
+               <a class="nav-link icon-home" href="home.html">Главная</a>
             </li>
-            <!-- Mailing -->
-            <li>
-               <a href="mailing.html" class="nav-link icon-letter" href="mailing.html">Рассылка почты</a>
-            </li>
+            
             <!-- Exit-Log -->
             <li>
-               <a class="nav-link icon-file-attach" href="exit-log.html">Журнал</a>
+               <a class="nav-link icon-file-attach" href="exit-log.html">Журнал выезда сотрудников</a>
+            </li>
+
+            <!-- Archive -->
+            <li>
+               <a class="nav-link icon-archive" href="archive.html">Архив</a>
             </li>
            
-            <!-- Private -->
+            <!-- Dashboard -->
             <li>
                <a class="nav-link nav-link--active icon-private">Панель управления</a>
             </li>
-      
-            <!-- Archive -->
+
+            <!-- Prom_radar -->
             <li>
-               <a class="nav-link svg-link icon-archive" href="archive.html">Архив</a>
+               <a class="nav-link icon-industry" href="prom-list.html">Платформа мониторинга промышленности</a>
             </li>
-      
-            <!-- Settings -->
+
+            <!-- Phone book -->
             <li>
-               <a class="nav-link icon-gear" href="setup.html">Настройки</a>
+               <a class="nav-link icon-archive" href="phone-book.html">Телефонная книга</a>
             </li>
+
+            <!-- Mailing -->
+            <li>
+               <a class="nav-link icon-letter" href="mailing.html">Сообщения</a>
+            </li>
+
          </ul>
       </div>
-      
+      <!-- End Sidebar-left -->
+
       <main class="main">
-         <section class="welcome">
-            <div class="welcome__dialog">
-               <div class="welcome__pict">
-                  <img src="img/svg/404.svg" alt="error">
-               </div>
-               <div class="welcome__title">Страница не найдена</div>
-               <a class="btn btn-primary" href="home.html">Главная</a>
+         <div class="btn-burger icon-burger"></div>
+         <section class="px-3 py-5" style="height: 100%;">
+            <h4 style="margin-left: 72px;" class="title mb-4">Панель управления</h4>
+
+            <!-- TABs -->
+            <ul class="tabs-list" style="margin-bottom: 0;">
+               <li class="tab-item">
+                  <a class="tab">Создать нового пользователя</a>
+               </li>
+               <li class="tab-item">
+                  <a class="tab">Все пользователи</a>
+               </li>
+               <li class="tab-item">
+                  <a class="tab ">Все управления</a>
+               </li>
+             
+            </ul>
+
+            <!-- TAB Content 1 -->
+            <div class="tab-content">
+               @@include("_dashboard-t1.html")
             </div>
 
-            
+            <!-- TAB Content 2 -->
+            <div  class="tab-content">
+               @@include("_dashboard-t2.html")
+            </div>
+
+            <!-- TAB Content 3 -->
+            <div class="tab-content">
+               @@include("_404.html")
+            </div>
+
 
          </section>
-         <div class="btn-burger">
-            <img src="img/svg/burger-ico.svg" alt="burger">
-         </div>
-         
+
       </main>
       @@include("_sidebar-right.html")
    </div>

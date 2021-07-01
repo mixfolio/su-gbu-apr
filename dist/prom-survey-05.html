@@ -88,9 +88,7 @@
       </div>
 
       <main class="main">
-         <div class="btn-burger">
-            <img src="img/svg/burger-ico.svg" alt="burger">
-         </div>
+         <div class="btn-burger icon-burger"></div>
          <section class="px-3 py-5" style="height: 100%;">
             <h4 style="margin-left: 72px;" class="title mb-4">Внеплановое обследование организации</h4>
 
@@ -98,20 +96,47 @@
 
             <div class="row">
 
-               <div class="mx-col flex-grow-1 mb-3">
-                  <label class="f-label" for="mailFrom">№ поручения</label>
-                  <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите номер">
-               </div>
-               <div class="mx-col flex-grow-1 mb-3">
+               <div  class="mx-col mb-3">
                   <label class="f-label" for="mailFrom">ИНН</label>
-                  <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите номер">
+                  <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="2345678909876543">
                </div>
                <div class="mx-col flex-grow-1 mb-3">
                   <label class="f-label" for="mailFrom">Наименование</label>
                   <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите номер">
                </div>
-               <a class="btn btn-primary mx-col mb-3 align-self-end" href="promradar_05.html">Найти организацию</a>
+               <a class="btn btn-primary mx-col mb-3" style="align-self: flex-end;" href="#">Найти организацию</a>
+               <a class="btn btn-danger mx-col mb-3" style="align-self: flex-end;" href="#">Добавить в план</a>
                
+            </div>
+
+
+            <div class="table-responsive">
+               <table class="table table-new">
+                  <thead>
+                     <tr>
+            
+                        <th>ИНН</th>
+                        <th>Наименование</th>
+                        <th>№ Поручения / Основание</th>
+                        <th>Дата окончания обследования</th>
+                        <th>Эксперт</th>
+                       
+                       
+                     </tr>
+                  </thead>
+                  <tbody>
+
+                     <tr>
+                        <td>2345678909876543</td>
+                        <td>Организация_1</td>
+                        <td>Введите название</td>
+                        <td>Выбрать дату</td>
+                        <td>Выбрать эксперта</td>
+                     </tr>
+
+                    
+                  </tbody>
+               </table>
             </div>
 
          </section>
