@@ -5,7 +5,8 @@ window.addEventListener('DOMContentLoaded', () => {
    @@include("sidebar-right.js")
    @@include("current-date.js")
    @@include("tabs.js")
-   @@include("form.js")
+   // @@include("form.js")
+   @@include("virtual-select.min.js")
    //@@include("exit-log.js")
 
    //@@include("spend.js")
