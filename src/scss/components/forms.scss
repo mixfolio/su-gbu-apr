@@ -38,6 +38,11 @@ option {
    background-color: #ffffff;
    font-family: inherit;
    padding: 14px 22px;
+
+   &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 .25rem rgba(74,77,134,.25);
+   }
 }
 
 .f-control:focus {
@@ -69,6 +74,10 @@ option {
    background-size: 16px 12px;
    &:active {
       appearance: none;
+   }
+   &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 .25rem rgba(74,77,134,.25);
    }
 }
 

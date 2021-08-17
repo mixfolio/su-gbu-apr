@@ -1005,6 +1005,12 @@ option {
           box-shadow: 0 0 0 0.25rem rgba(74, 77, 134, 0.25);
 }
 
+.f-control:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(74, 77, 134, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(74, 77, 134, 0.25);
+}
+
 .f-control-ico {
   background-repeat: no-repeat;
   background-position: calc(100% - 22px) 50%;
@@ -1034,6 +1040,12 @@ option {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+
+.f-select:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(74, 77, 134, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(74, 77, 134, 0.25);
 }
 
 .input-attachment {
