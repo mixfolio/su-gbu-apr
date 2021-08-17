@@ -3,14 +3,14 @@
 .tabs-list {
    display: flex;
    flex-wrap: wrap;
-   margin-right: -12px;
-   margin-left: -12px;
+   margin-right: -4px;
+   margin-left: -4px;
    margin-bottom: 1.5rem;
 }
 
 .tab-item {
-   margin: 0 12px;
-   margin-bottom: 24px;
+   margin: 0 4px;
+   margin-bottom: 4px;
 }
 
 .tab {
@@ -25,7 +25,7 @@
    justify-content: center;
    align-items: center;
    background-color: #fff;
-   border-radius: 8px;
+   border-radius: 8px 8px 0 0;
    // box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.05);
    cursor: pointer;
    transition: all 0.3s ease 0s;

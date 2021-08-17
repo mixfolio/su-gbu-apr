@@ -1,15 +1,4 @@
 //Forms
-textarea {
-   font-family: inherit;
-   font-size: inherit;
-   resize: none;
-}
-
-select,
-option {
-   font-family: inherit;
-   font-size: inherit;
-}
 
 .f-label {
    display: flex;
@@ -29,14 +18,12 @@ option {
 
 .f-control {
    // height: 48px;
-   font-family: 'Montserrat', sans-serif;
    font-size: 1rem;
    line-height: 1.25rem;
    font-weight: normal;
    border: none;
    border-radius: 24px;
    background-color: #ffffff;
-   font-family: inherit;
    padding: 14px 22px;
 
    &:focus {
@@ -64,7 +51,7 @@ option {
    height: 48px;
    border-radius: 24px;
    background-color: #ffffff;
-   font-size: 16px;
+   font-size: 1rem;
    padding: 0 1.75rem 0 22px;
    appearance: none;
    color: $title-color;
@@ -194,7 +181,7 @@ option {
 
 .vscomp-wrapper {
    font-family: 'Montserrat', sans-serif;
-   font-size: 18px;
+   font-size: 1rem;
    font-weight: normal;
 }
 
@@ -234,7 +221,7 @@ option {
 }
 
 .vscomp-search-input {
-   font-size: 16px;
+   font-size: 1rem;
    font-family: Montserrat, sans-serif;
    font-weight: 400;
 }
