@@ -40,6 +40,11 @@ option {
    padding: 14px 22px;
 }
 
+.f-control:focus {
+   outline: 0;
+   box-shadow: 0 0 0 .25rem rgba(74,77,134,.25);
+}
+
 .f-control-ico {
    background-repeat: no-repeat;
    background-position: calc(100% - 22px) 50% ;
