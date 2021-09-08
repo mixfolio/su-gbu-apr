@@ -7,12 +7,12 @@ function hideTabContent() {
       item.style.display = 'none';
    });
    tabs.forEach(tab => {
-      tab.classList.remove('tab-active');
+      tab.classList.remove('tab--active');
    });
 }
 function showTabContent(i = 0) {
    tabsContent[i].style.display = '';
-   tabs[i].classList.add('tab-active');
+   tabs[i].classList.add('tab--active');
 }
 hideTabContent();
 showTabContent();
