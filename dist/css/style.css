@@ -756,6 +756,13 @@ td {
   z-index: 10;
 }
 
+tbody .sticky > td {
+  position: -webkit-sticky;
+  position: sticky;
+  border: 0;
+  z-index: 10;
+}
+
 .table-responsive {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
