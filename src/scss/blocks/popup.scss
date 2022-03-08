@@ -20,6 +20,67 @@
    box-shadow: 0 0 8px rgba(0,0,0,0.4);
 }
 
+.modal-profile {
+   background: rgba(0, 0, 0, 0.7);
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   display: none;
+   z-index: 100;
+}
+
+.modal-profile.open {
+   display: block;
+}
+
+.modal-profile-body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100%;
+   overflow-y: auto;
+}
+
+.modal-profile-dialog {
+   margin: 30px;
+   width: 820px;
+   padding: 32px;
+   background: #ffffff;
+   border-radius: 8px;
+   position: relative;
+}
+
+.modal-profile-dialog img {
+   height: 400px;
+   width: 300px;
+   object-fit: none;
+   object-position: top;
+   margin-right: 24px;
+}
+
+.modal-profile-dialog h4 {
+   color: #4a4d86;
+}
+
+.modal-profile-name {
+   margin-bottom: 32px;
+}
+
+.modal-profile-name h2 {
+   margin-bottom: 12px;
+}
+
+.modal-profile-close {
+   position: absolute;
+   font-size: 32px;
+   top: -16px;
+   right: -16px;
+}
+
 
 
 

@@ -242,13 +242,14 @@ h4 {
 
 .sidebar-left {
    position: relative;
-   flex: 0 0 220px;
+   flex: 0 0 240px;
    min-height: calc(100vh - 116px);
    background: #ffffff;
    box-shadow: 4px 0px 24px rgba(0, 0, 0, 0.04);
    z-index: 5;
    padding: 8px;
    display: none;
+   overflow-y: auto;
 }
 
 .sidebar-left--show {
