@@ -161,6 +161,9 @@ hr {
 .bg-error {
    background-color: $error-color !important;
 }
+.bg-bg {
+   background-color: $bg-color !important;
+}
 
 .link-primary {
    color: $primary-color;
@@ -294,10 +297,12 @@ h4 {
 
 .sidebar-right {
    flex: 0 0 240px;
-   min-height: calc(100vh - 116px);
+   // min-height: calc(100vh - 116px);
+   height: 100%;
    background: #ffffff;
    padding: 32px;
    border-left: 1px solid #f2f2f2;
+   border: 1px solid red;
    // transition: all 0.5s ease 0s;
 }
 
@@ -472,22 +477,26 @@ h4 {
 
 .user__role {
    display: block;
-   font-family: 'Futura PT Demi';
    font-size: 0.75rem;
    text-transform: uppercase;
    color: #adadad;
 }
 .user__fio {
-   font-family: 'Futura PT Demi';
    color: #333333;
    font-size: 1rem;
+}
+.user__photo {
+   width: 300px;
+   height: 400px;
+   object-fit: none;
+   object-position: top;
+   
 }
 
 .subtitle-divider {
    display: flex;
    overflow: hidden;
    align-items: center;
-   font-family: 'Futura PT Demi';
    color: #333333;
    font-size: 1rem;
    text-transform: uppercase;
